@@ -1,6 +1,7 @@
 package day23_ArrayLists;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class C01_Lists {
@@ -8,9 +9,21 @@ public class C01_Lists {
 
         List<Integer> sayilar1 = new ArrayList<>();
 
+        //Listlerde eleman eklemenın diğer yolları;
+
+        //1. yol add metodu;
+
         sayilar1.add(5);
         sayilar1.add(3);
         sayilar1.add(2);
+
+        //2. yol Arrays.asList metodunu kullanarak
+
+        List<String> ikinciyol = Arrays.asList("Ali","Ayse","Ismaıl","Ahmet","Babayigit");
+        System.out.println(ikinciyol);
+
+        //3.yol: List of metodunu kullanarak
+        ArrayList<String> ulkeler= new ArrayList<String>( List.of("Almanya", "Fransa", "Ingiltere", "Ispanya", "Italya") );
 
         sayilar1.size();  // int kapasite döndürür.stringdekı length görevini yapar.
 
